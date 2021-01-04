@@ -1,0 +1,1 @@
+run comman ``` npx tsc ```

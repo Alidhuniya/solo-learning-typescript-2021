@@ -1,50 +1,46 @@
-//typescript for js
+// ts tooling
 
-// ts by inference
-let helloWorld = "Hello World"; 
 
-// defining types
-//   interface User {
-//       name: string;
-//       id: number;
+// classes
+// class Student {
+//     fullName: string;
+//     constructor(
+//       public firstName: string,
+//       public middleInitial: string,
+//       public lastName: string
+//     ) {
+//       this.fullName = firstName + " " + middleInitial + " " + lastName;
+//     }
 //   }
-
-//   const user: User = {
-//     name: "Hayes",
-//     id: 0,
-//   };
-//   console.log(user.name);
-
-  interface User {
-    name: string;
-    id: number;
-  }
-
-  interface User1 {
-      name1: number;
-  }
   
-  class UserAccount {
-    name: string;
-    id: number;
-    name1: number;
+//   interface Person {
+//     firstName: string;
+//     lastName: string;
+//     middleInitial: string;
+//   }
   
-    constructor(name: string, id: number, name1: number) {
-      this.name = name;
-      this.id = id;
-      this.name1 = name1;
-    }
+//   function greeter(person: Person) {
+//     return "Hello, " + person.firstName + " " + person.lastName;
+//     // return "Hello, " + person.firstName + " " + person.middleInitial + " " + person.lastName;
+//   }
+  
+//   let user = new Student("Jane", "M.", "User");
+  
+//   document.body.textContent = greeter(user);
+
+
+
+// interfaces
+interface Person {
+    firstName: string;
+    middleName?: string;
+    lastName: string;
   }
   
-  const user: User = new UserAccount("Murphy", 1, 3);
-  const user1: User1 = new UserAccount("ali", 1, 5);
-  console.log(user.name);
-  console.log(user1.name1);
-  console.log(user.id);
-  console.log(user1.name1);
-
-  //composing types
+  function greeter(person: Person) {
+    return "Hello, " + person.firstName + " " + person.middleName + " "  + person.lastName;
+  }
   
-  //unions
-  // generics
-  // structural type system
+  let user = { firstName: "Jane", middleName: " Mishra", lastName: "User" };
+  
+  document.body.textContent = greeter(user);

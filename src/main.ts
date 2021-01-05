@@ -1,16 +1,18 @@
-/*TypeScript: A Static Type Checker
-We said earlier that some languages wouldn’t allow those buggy programs to run at all. Detecting errors in code without running it is referred to as static checking. Determining what’s an error and what’s not based on the kinds of values being operated on is known as static type checking.
+// dividing by zero
+//js
 
-TypeScript checks a program for errors before execution, and does so based on the kinds of values, it’s a static type checker. For example, the last example above has an error because of the type of obj. Here’s the error TypeScript found:
+let div = 10 / 0;
+console.log(div); // infinity
+
+//typescript
+let dv : number = 10 / 0;
+console.log(dv);
+
+/*
+Runtime Behavior
+TypeScript is also a programming language that preserves the runtime behavior of JavaScript. For example, dividing by zero in JavaScript produces Infinity instead of throwing a runtime exception. As a principle, TypeScript never changes the runtime behavior of JavaScript code.
+
+This means that if you move code from JavaScript to TypeScript, it is guaranteed to run the same way, even if TypeScript thinks that the code has type errors.
+
+Keeping the same runtime behavior as JavaScript is a foundational promise of TypeScript because it means you can easily transition between the two languages without worrying about subtle differences that might make your program stop working.
 */
-
-const obj = { width: 10, height: 15 };
-const area = obj.width * obj.heigth; // this will show you NaN in console but why Nan(not a number when spelling is incorrect) to correct write "height" and you'll get the expected result
-console.log(area);
-// Property 'heigth' does not exist on type '{ width: number; height: number; }'. Did you mean 'height'?
-
-//correct way of doing
-
-const obj1 = { width: 10, height: 15 };
-const area1 = obj1.width * obj1.height;
-console.log(area1);

@@ -1,15 +1,50 @@
-// what is javascript runtime
+//typescript for js
 
-/*
-Javascript runtime refers to where your javascript code is executed when you run it. That said, javascript can be executed on google chrome, in which case your javascript runtime is v8, if on mozilla - it is spidermonkey, if IE - then its chakra and if on node, again its v8.
-*/
+// ts by inference
+let helloWorld = "Hello World"; 
 
-// from stackoverflow link: https://stackoverflow.com/questions/30838412/what-is-javascript-runtime#:~:text=Javascript%20runtime%20refers%20to%20where,node%2C%20again%20its%20v8.%20%E2%80%93
+// defining types
+//   interface User {
+//       name: string;
+//       id: number;
+//   }
 
-/*
-Chrome's javascript runtime is Google's V8 engine which was developed by Google to be used with Google Chrome.
+//   const user: User = {
+//     name: "Hayes",
+//     id: 0,
+//   };
+//   console.log(user.name);
 
-It compiles the javascript code to native machine code instead of interpreting bytecode which gives a major performance boost to javascript (which is traditionally very slow compared to other high level languages).
+  interface User {
+    name: string;
+    id: number;
+  }
 
-Node.js contains libuv to handle asynchronous events. V8 provides the run-time for JavaScript.
-*/
+  interface User1 {
+      name1: number;
+  }
+  
+  class UserAccount {
+    name: string;
+    id: number;
+    name1: number;
+  
+    constructor(name: string, id: number, name1: number) {
+      this.name = name;
+      this.id = id;
+      this.name1 = name1;
+    }
+  }
+  
+  const user: User = new UserAccount("Murphy", 1, 3);
+  const user1: User1 = new UserAccount("ali", 1, 5);
+  console.log(user.name);
+  console.log(user1.name1);
+  console.log(user.id);
+  console.log(user1.name1);
+
+  //composing types
+  
+  //unions
+  // generics
+  // structural type system

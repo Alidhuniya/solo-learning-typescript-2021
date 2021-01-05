@@ -1,1 +1,1 @@
-run comman ``` npx tsc ```
+run command ``` npx tsc ```

@@ -1,15 +1,12 @@
-// dividing by zero
-//js
-var div = 10 / 0;
-console.log(div); // infinity
-//typescript
-var dv = 10 / 0;
-console.log(dv);
+// what is javascript runtime
 /*
-Runtime Behavior
-TypeScript is also a programming language that preserves the runtime behavior of JavaScript. For example, dividing by zero in JavaScript produces Infinity instead of throwing a runtime exception. As a principle, TypeScript never changes the runtime behavior of JavaScript code.
+Javascript runtime refers to where your javascript code is executed when you run it. That said, javascript can be executed on google chrome, in which case your javascript runtime is v8, if on mozilla - it is spidermonkey, if IE - then its chakra and if on node, again its v8.
+*/
+// from stackoverflow link: https://stackoverflow.com/questions/30838412/what-is-javascript-runtime#:~:text=Javascript%20runtime%20refers%20to%20where,node%2C%20again%20its%20v8.%20%E2%80%93
+/*
+Chrome's javascript runtime is Google's V8 engine which was developed by Google to be used with Google Chrome.
 
-This means that if you move code from JavaScript to TypeScript, it is guaranteed to run the same way, even if TypeScript thinks that the code has type errors.
+It compiles the javascript code to native machine code instead of interpreting bytecode which gives a major performance boost to javascript (which is traditionally very slow compared to other high level languages).
 
-Keeping the same runtime behavior as JavaScript is a foundational promise of TypeScript because it means you can easily transition between the two languages without worrying about subtle differences that might make your program stop working.
+Node.js contains libuv to handle asynchronous events. V8 provides the run-time for JavaScript.
 */

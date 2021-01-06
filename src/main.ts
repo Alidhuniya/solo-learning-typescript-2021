@@ -1,11 +1,46 @@
-//From official docs
+// concepts good to know
 
 /*
-Get Started, Handbook and Handbook ref are the main topics
-ANd other section of docs are useful when it comes to specific things
-like for buiding packages in ts we need .dts file and declaration files section
-for tsconfig file we need project configuration section
-what's new section for new release
-tutorials section is for specific language like c#,asp.net and so on
-stick with basics and do read others code to find a way of writing better ts code. 
+Typescript Concepts you should know
+Interfaces vs types, when should use and where
+
+Basic types: tuple, enum, any, void, never, null and undefined, type assertions
+
+functions and this keyword in typescript
+
+classes
+
+generics
+
+Iterators and Generators
+
+JSX
+
+Mixins
+
+Modules
+
+Module Resolution
+
+Namespaces
+
+Namespaces and Modules
+
+tsconfig.json file
+
+webpack configuration
+
+typescript config with react and webpack
+
+react, redux, webpack and typescript
+
+frontend stack with typescript
+
+React/NextJS, redux, webpack, sass/styled components, npm/yarn, Headless cms (contentful, strapi cms), graphql/rest api, git/github or gitlab,bitbucket, jest testing, if necessary gulp and grunt
+frontend stack with javascript
+
+React/NextJS, redux, webpack, sass/styled components, npm/yarn, Headless cms (contentful, strapi cms), graphql/rest api, git/github or gitlab,bitbucket, jest testing, if necessary gulp and grunt
+frontend stack with webComponents
+
+webComponents, redux, webpack, sass/styled components, npm/yarn, Headless cms (contentful, strapi cms), graphql/rest api, git/github or gitlab,bitbucket, jest testing, if necessary gulp and grunt
  */

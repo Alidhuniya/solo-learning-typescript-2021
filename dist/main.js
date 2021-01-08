@@ -1,10 +1,14 @@
-// generics
-function identity(arg) {
-    return arg;
+/*
+It can be tempting to think that the types Number, String, Boolean, Symbol, or Object are the same as the lowercase versions
+ recommended above. These types do not refer to the language primitives however, and almost never should be used as a type.
+*/
+function reverse(s) {
+    return s.split("").reverse().join("");
 }
-var output = identity("myString");
-console.log(output);
-//or
-console.log(identity(444)); /* or */
-console.log(identity(555));
+reverse("hello world");
+//   Instead, use the types number, string, boolean, object and symbol.
+function reverse1(s) {
+    return s.split("").reverse().join("");
+}
+console.log(reverse1("hello world"));
 //# sourceMappingURL=main.js.map

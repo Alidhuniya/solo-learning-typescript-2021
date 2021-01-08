@@ -1,22 +1,18 @@
-// before ts
 /*
-we use jsdocs tool before we have ts for documenting our js code
-
-JSDoc is a markup language used to annotate JavaScript source code files. Using comments containing JSDoc, programmers can add documentation describing the application programming interface of the code they're creating
-
+It can be tempting to think that the types Number, String, Boolean, Symbol, or Object are the same as the lowercase versions
+ recommended above. These types do not refer to the language primitives however, and almost never should be used as a type.
 */
 
-/*
-sources:
-links given
-https://www.youtube.com/watch?v=Nqv6UkTROak
-https://www.youtube.com/watch?v=YK-GurROGIg
-https://jsdoc.app/
-https://devhints.io/jsdoc
-*/
+function reverse(s: String): String {
+    return s.split("").reverse().join("");
+  }
+  
+  reverse("hello world");
 
-/*
-js docs is used for documenting code and can generate docs page in html file
-js docs is used for to check types in js code like typescript
-can be used in js,react,node,express and so on
-*/
+//   Instead, use the types number, string, boolean, object and symbol.
+
+function reverse1(s: string): string {
+    return s.split("").reverse().join("");
+  }
+  
+  console.log(reverse1("hello world"));

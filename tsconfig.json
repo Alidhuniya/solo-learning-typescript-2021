@@ -7,7 +7,7 @@
       "sourceMap": true,
       "outDir": "./dist",
       "rootDir": "./src",
-      
+      "noEmitOnError": true,  // enforece ts to not compile in to js file
       "watch": true
   },
   
